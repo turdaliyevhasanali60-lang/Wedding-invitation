@@ -6,9 +6,9 @@
   <title data-i18n="title">Anvar & Laylo — Wedding Invitation</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="You are cordially invited to celebrate the wedding ceremony of Anvar and Laylo on June 13, 2026. View schedule, location map, and RSVP.">
+  <meta name="description" content="You are cordially invited to celebrate the wedding ceremony of Anvar and Laylo on June 13, 2026.">
   <meta property="og:title" content="Anvar & Laylo — Wedding Invitation">
-  <meta property="og:description" content="Celebrate with us! June 13, 2026. Location, Schedule, and RSVP details inside.">
+  <meta property="og:description" content="Celebrate with us! June 13, 2026.">
   <meta property="og:type" content="website">
   
   <!-- Styling Sheet -->
@@ -58,8 +58,7 @@
     <!-- 1. HERO SECTION -->
     <section id="hero">
       <div class="hero-content">
-        <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-        <span class="subtitle" data-i18n="hero_welcome">The Wedding Celebration of</span>
+        <span class="subtitle" data-i18n="hero_subtitle">Wedding Invitation</span>
         <h1 class="hero-title">
           Anvar
           <span>&</span>
@@ -67,7 +66,7 @@
         </h1>
         <div class="hero-date">13 . 06 . 2026</div>
         
-        <!-- Animated Ornament -->
+        <!-- Ornament -->
         <div class="section-divider">
           <svg viewBox="0 0 100 20">
             <path d="M 10,10 Q 25,2 40,10 T 70,10 T 90,10" fill="none" stroke="currentColor" stroke-width="1.5"/>
@@ -76,15 +75,16 @@
         </div>
 
         <!-- Hero Quote Block -->
-        <p class="hero-quote-text" style="font-family: var(--font-serif); font-size: 0.95rem; font-style: italic; color: var(--text-muted); max-width: 500px; margin-top: 1.5rem; line-height: 1.6; padding: 0 1rem;">
+        <p class="hero-quote-text">
           <span data-i18n="hero_quote">"Sevgi — bu bir-biriga qarash emas, balki bir yo‘nalishda birga qarashdir."</span>
           <br>
-          <span data-i18n="hero_author" style="font-size: 0.75rem; font-style: normal; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem; display: inline-block;">— Jaloliddin Rumiy</span>
+          <span data-i18n="hero_author" class="hero-author">— Jaloliddin Rumiy</span>
         </p>
       </div>
 
-      <div class="scroll-indicator" onclick="document.getElementById('invitation').scrollIntoView({behavior: 'smooth'})">
-        <span>Scroll to Open</span>
+      <!-- Scroll to Open Button (also starts music) -->
+      <div id="scroll-btn" class="scroll-indicator">
+        <span data-i18n="scroll_open">Scroll to Open</span>
         <svg viewBox="0 0 24 24">
           <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
         </svg>
@@ -94,11 +94,9 @@
     <!-- 2. INVITATION TEXT SECTION -->
     <section id="invitation">
       <div class="container scroll-reveal">
-        <span class="subtitle" data-i18n="invite_title">Welcome to Our Story</span>
-        
         <div class="invitation-card">
           <!-- Quote -->
-          <p class="invitation-quote" data-i18n="final_quote">
+          <p class="invitation-quote" data-i18n="closing_quote">
             "Ba’zi lahzalar so‘zga sig‘maydi. Ular faqat his qilinadi. Sizni yonimizda ko‘rishdan mamnun bo‘lamiz."
           </p>
 
@@ -109,165 +107,28 @@
             </svg>
           </div>
 
+          <!-- Body -->
           <p class="invitation-body" data-i18n="invite_body">
             Aziz va qadrli insonlar, Biz hayotimizning yangi bosqichiga qadam qo‘ymoqdamiz. Bu kun — faqat marosim emas, bu — ikki qalbning bir yo‘lga aylanishi. Sizning ishtirokingiz biz uchun qadrlidir.
           </p>
 
           <h2 class="invitation-names">Anvar & Laylo</h2>
 
-          <p class="invitation-body" data-i18n="details_body" style="font-weight: 500; color: var(--accent-gold); margin-top: 1.5rem; letter-spacing: 0.05em;">
+          <!-- Details -->
+          <p class="invitation-details" data-i18n="details_body">
             Sana: 13.06.2026 | Vaqt: 10:00 | Manzil: Labi Hovuz
           </p>
         </div>
       </div>
     </section>
 
-    <!-- 3. COUNTDOWN TIMER SECTION -->
-    <section id="countdown">
-      <div class="container scroll-reveal">
-        <span class="subtitle" data-i18n="countdown_subtitle">The Celebration Begins In</span>
-        <h2 class="text-gold" data-i18n="save_the_date" style="font-size: 2.5rem; margin-bottom: 1rem;">Save the Date</h2>
-        <p data-i18n="details_body" style="color: var(--text-muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto 3rem auto;">
-          Sana: 13.06.2026 | Vaqt: 10:00 | Manzil: Labi Hovuz
-        </p>
-
-        <!-- Glassmorphic Grid -->
-        <div class="countdown-box">
-          <div class="countdown-item">
-            <div id="days" class="countdown-number">00</div>
-            <div class="countdown-label" data-i18n="countdown_days">Days</div>
-          </div>
-          <div class="countdown-item">
-            <div id="hours" class="countdown-number">00</div>
-            <div class="countdown-label" data-i18n="countdown_hours">Hours</div>
-          </div>
-          <div class="countdown-item">
-            <div id="minutes" class="countdown-number">00</div>
-            <div class="countdown-label" data-i18n="countdown_minutes">Minutes</div>
-          </div>
-          <div class="countdown-item">
-            <div id="seconds" class="countdown-number">00</div>
-            <div class="countdown-label" data-i18n="countdown_seconds">Seconds</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. TIMELINE / SCHEDULE SECTION -->
-    <section id="timeline">
-      <div class="container">
-        <span class="subtitle" data-i18n="timeline_subtitle">Wedding Day Schedule</span>
-        <h2 class="text-gold" data-i18n="timeline_title" style="font-size: 2.5rem; margin-bottom: 1.5rem;">Event Timeline</h2>
-        <p data-i18n="timeline_desc" style="color: var(--text-muted); margin-bottom: 2rem;">Please join us for the celebrations scheduled throughout the day.</p>
-
-        <div class="timeline-wrapper">
-          
-          <!-- Event 1: Morning Plov -->
-          <div class="timeline-item left scroll-reveal">
-            <div class="timeline-node">
-              <svg viewBox="0 0 24 24">
-                <path d="M2 19h20v2H2zM12 2C6.48 2 2 6.48 2 12h20c0-5.52-4.48-10-10-10zm-1 8H5.2c.6-2.1 2.2-3.8 4.3-4.5V10zm3.8 0h-2.3V5.5c2.1.7 3.7 2.4 4.3 4.5h-2z"/>
-              </svg>
-            </div>
-            <div class="timeline-content">
-              <span class="timeline-time">10:00 AM — 12:30 PM</span>
-              <h3 class="timeline-title" data-i18n="timeline_plov_title">Morning Plov</h3>
-              <p class="timeline-desc" data-i18n="timeline_plov_desc">
-                A traditional Uzbek wedding breakfast serving the festive morning Plov to family, friends, and neighbors.
-              </p>
-              <p class="timeline-desc" data-i18n="timeline_plov_loc" style="margin-top: 0.5rem; font-style: italic; color: var(--accent-gold-light);">
-                Location: "Labi Hovuz" National Restaurant, Bukhara
-              </p>
-            </div>
-          </div>
-
-          <!-- Event 2: Sacred Nikah -->
-          <div class="timeline-item right scroll-reveal delay-100">
-            <div class="timeline-node">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-              </svg>
-            </div>
-            <div class="timeline-content">
-              <span class="timeline-time">04:30 PM — 05:30 PM</span>
-              <h3 class="timeline-title" data-i18n="timeline_nikah_title">Nikah Ceremony</h3>
-              <p class="timeline-desc" data-i18n="timeline_nikah_desc">
-                The sacred religious ceremony where marriage vows and contracts are signed in the presence of witnesses.
-              </p>
-              <p class="timeline-desc" data-i18n="timeline_nikah_loc" style="margin-top: 0.5rem; font-style: italic; color: var(--accent-gold-light);">
-                Location: Central Mosque of Bukhara
-              </p>
-            </div>
-          </div>
-
-          <!-- Event 3: Reception & Dinner -->
-          <div class="timeline-item left scroll-reveal delay-200">
-            <div class="timeline-node">
-              <svg viewBox="0 0 24 24">
-                <path d="M21 5V3H3v2l8 9v5H6v2h12v-2h-5v-5l8-9zM7.43 7L5.65 5h12.7L16.57 7H7.43z"/>
-              </svg>
-            </div>
-            <div class="timeline-content">
-              <span class="timeline-time">06:30 PM — 11:30 PM</span>
-              <h3 class="timeline-title" data-i18n="timeline_party_title">Grand Wedding Reception</h3>
-              <p class="timeline-desc" data-i18n="timeline_party_desc">
-                An elegant evening of dinner, music, traditional dances, and festive celebrations to toast the newlyweds.
-              </p>
-              <p class="timeline-desc" data-i18n="timeline_party_loc" style="margin-top: 0.5rem; font-style: italic; color: var(--accent-gold-light);">
-                Location: "Versailles" Banquet Hall, Bukhara
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. LOCATION / MAP SECTION -->
-    <section id="location">
-      <div class="container scroll-reveal">
-        <span class="subtitle" data-i18n="venue_subtitle">Find Your Way</span>
-        <h2 class="text-gold" data-i18n="venue_title" style="font-size: 2.5rem; margin-bottom: 2rem;">Wedding Venue</h2>
-        
-        <div class="location-card">
-          <h3 class="venue-name" data-i18n="venue_name">Labi Hovuz</h3>
-          <p class="venue-address" data-i18n="venue_address">Bukhara city, M. Ambarov Street (Historical Center)</p>
-          
-          <div class="map-container">
-            <!-- Google Maps Embed centered on Labi Hovuz, Bukhara -->
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.8488092892994!2d64.41829671131652!3d39.77353999518171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060be4450bf3%3A0xcad4ad5d4546bf2c!2sLyabi-Khauz!5e0!3m2!1sen!2s!4v1717320000000!5m2!1sen!2s" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Google Maps Location for Lyabi-Khauz, Bukhara">
-            </iframe>
-          </div>
-
-          <a href="https://maps.app.goo.gl/354Nf81T1gSgG9zS8" target="_blank" class="btn-gold" id="btn-directions">
-            <span data-i18n="btn_directions">Get Directions</span>
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-
   </main>
 
-  <!-- 7. FOOTER -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-names">Anvar & Laylo</div>
-    <p class="footer-text" data-i18n="footer_text">13 . 06 . 2026 • We look forward to celebrating with you.</p>
-    <p class="footer-text" data-i18n="footer_copy" style="font-size: 0.75rem; margin-top: 2rem; opacity: 0.5;">
-      Designed with elegance &bull; &copy; 2026 All Rights Reserved
-    </p>
+    <p class="footer-text">13 . 06 . 2026</p>
   </footer>
-
-
 
   <!-- JavaScript Behavior File -->
   <script src="app.js"></script>
