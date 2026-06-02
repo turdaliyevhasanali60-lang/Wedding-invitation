@@ -30,26 +30,28 @@
     <button class="lang-btn" data-lang="en">EN</button>
   </div>
 
-  <!-- Floating Music Controller Widget -->
-  <div class="music-widget">
-    <button id="music-toggle" class="music-toggle-btn" aria-label="Toggle Background Music">
-      <!-- Muted Icon by default -->
-      <svg id="music-icon-muted" viewBox="0 0 24 24">
-        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM4 9v6h4l5 5V4L8 9H4zm12.5-6.03c-.22-.05-.44-.08-.66-.11v2.06c.11.02.22.05.32.08.38.1.75.25 1.1.44l1.48-1.48c-.68-.45-1.44-.78-2.24-.99zM19.97 6l-1.48 1.48c.51.57.92 1.23 1.2 1.95l1.89-.63C21.2 7.74 20.66 6.82 19.97 6zm.38 6.37l1.89.63c.2-.59.32-1.21.36-1.85h-1.92c-.03.41-.11.82-.33 1.22zm-2.9 3.12l1.48 1.48c.68-.57 1.23-1.28 1.61-2.08l-1.83-.61c-.26.54-.64 1.02-1.26 1.21z"/>
-      </svg>
-      <!-- Playing Icon (hidden by default) -->
-      <svg id="music-icon-playing" viewBox="0 0 24 24" style="display: none;">
-        <path d="M3 9v6h4l5 5V4L8 9H4zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-      </svg>
+  <!-- Sleek Floating Music Pill Widget -->
+  <div class="music-widget music-pill-container">
+    <button id="music-toggle" class="music-pill-btn" aria-label="Toggle Background Music">
+      <span class="music-pill-icon-wrap">
+        <!-- Muted Icon by default -->
+        <svg id="music-icon-muted" viewBox="0 0 24 24" class="music-icon">
+          <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM4 9v6h4l5 5V4L8 9H4zm12.5-6.03c-.22-.05-.44-.08-.66-.11v2.06c.11.02.22.05.32.08.38.1.75.25 1.1.44l1.48-1.48c-.68-.45-1.44-.78-2.24-.99zM19.97 6l-1.48 1.48c.51.57.92 1.23 1.2 1.95l1.89-.63C21.2 7.74 20.66 6.82 19.97 6zm.38 6.37l1.89.63c.2-.59.32-1.21.36-1.85h-1.92c-.03.41-.11.82-.33 1.22zm-2.9 3.12l1.48 1.48c.68-.57 1.23-1.28 1.61-2.08l-1.83-.61c-.26.54-.64 1.02-1.26 1.21z" fill="currentColor"/>
+        </svg>
+        <!-- Playing Icon (hidden by default) -->
+        <svg id="music-icon-playing" viewBox="0 0 24 24" class="music-icon" style="display: none;">
+          <path d="M3 9v6h4l5 5V4L8 9H4zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="music-pill-text" data-i18n="music_label">Fon musiqasi</span>
+      <!-- Sound Wave Animation Visualizer -->
+      <div id="music-wave" class="music-wave">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </button>
-    
-    <!-- Pulse Waveform -->
-    <div id="music-wave" class="music-wave">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </div>
 
   <!-- Main Scrollable Body -->
@@ -58,6 +60,15 @@
     <!-- 1. HERO SECTION -->
     <section id="hero">
       <div class="hero-content">
+        <!-- Inner Border Frame -->
+        <div class="frame-inset"></div>
+        
+        <!-- Botanical Corners -->
+        <svg class="botanical-corner top-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner top-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner bottom-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner bottom-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+
         <span class="subtitle" data-i18n="hero_subtitle">Wedding Invitation</span>
         <h1 class="hero-title">
           Anvar
@@ -66,11 +77,16 @@
         </h1>
         <div class="hero-date">13 . 06 . 2026</div>
         
-        <!-- Ornament -->
-        <div class="section-divider">
-          <svg viewBox="0 0 100 20">
-            <path d="M 10,10 Q 25,2 40,10 T 70,10 T 90,10" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="50" cy="10" r="3" fill="currentColor"/>
+        <!-- Premium Botanical Divider -->
+        <div class="section-divider botanical-divider-wrap">
+          <svg class="botanical-divider" viewBox="0 0 200 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M100,15 C95,10 90,15 100,25 C110,15 105,10 100,15 Z" fill="currentColor" fill-opacity="0.2" />
+            <path d="M90,17 C70,17 50,12 20,15" />
+            <path d="M75,17 C68,12 62,10 58,15 C54,20 62,22 68,17" />
+            <path d="M50,16 C43,11 37,9 33,14" />
+            <path d="M110,17 C130,17 150,12 180,15" />
+            <path d="M125,17 C132,12 138,10 142,15 C146,20 138,22 132,17" />
+            <path d="M150,16 C157,11 163,9 167,14" />
           </svg>
         </div>
 
@@ -95,15 +111,30 @@
     <section id="invitation">
       <div class="container scroll-reveal">
         <div class="invitation-card">
+          <!-- Inner Border Frame -->
+          <div class="frame-inset"></div>
+          
+          <!-- Botanical Corners -->
+          <svg class="botanical-corner top-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+          <svg class="botanical-corner top-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+          <svg class="botanical-corner bottom-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+          <svg class="botanical-corner bottom-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+
           <!-- Quote -->
           <p class="invitation-quote" data-i18n="closing_quote">
             "Ba’zi lahzalar so‘zga sig‘maydi. Ular faqat his qilinadi. Sizni yonimizda ko‘rishdan mamnun bo‘lamiz."
           </p>
 
-          <div class="section-divider">
-            <svg viewBox="0 0 100 20">
-              <path d="M 0,10 L 40,10 L 50,2 L 60,10 L 100,10" fill="none" stroke="currentColor" stroke-width="1.5"/>
-              <polygon points="50,2 47,8 53,8" fill="currentColor"/>
+          <!-- Premium Botanical Divider -->
+          <div class="section-divider botanical-divider-wrap">
+            <svg class="botanical-divider" viewBox="0 0 200 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M100,15 C95,10 90,15 100,25 C110,15 105,10 100,15 Z" fill="currentColor" fill-opacity="0.2" />
+              <path d="M90,17 C70,17 50,12 20,15" />
+              <path d="M75,17 C68,12 62,10 58,15 C54,20 62,22 68,17" />
+              <path d="M50,16 C43,11 37,9 33,14" />
+              <path d="M110,17 C130,17 150,12 180,15" />
+              <path d="M125,17 C132,12 138,10 142,15 C146,20 138,22 132,17" />
+              <path d="M150,16 C157,11 163,9 167,14" />
             </svg>
           </div>
 
@@ -125,6 +156,24 @@
     <!-- 3. COUNTDOWN TIMER SECTION -->
     <section id="countdown">
       <div class="countdown-inner scroll-reveal">
+        <!-- Inner Border Frame -->
+        <div class="frame-inset"></div>
+        
+        <!-- Botanical Corners -->
+        <svg class="botanical-corner top-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner top-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner bottom-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+        <svg class="botanical-corner bottom-right" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M5,5 C25,15 45,35 60,60 M5,5 C12,18 22,25 25,38 C26,45 20,48 15,42 M22,14 C30,25 40,30 45,45 C46,52 40,55 35,48 M38,30 C45,40 52,45 55,58 M5,5 C18,10 28,15 35,25"/></svg>
+
+        <!-- Mini Botanical Accent Above Title -->
+        <div class="section-divider botanical-divider-wrap mini-divider">
+          <svg class="botanical-divider" viewBox="0 0 200 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M100,15 C95,10 90,15 100,25 C110,15 105,10 100,15 Z" fill="currentColor" fill-opacity="0.2" />
+            <path d="M90,17 C80,17 70,14 60,15" />
+            <path d="M110,17 C120,17 130,14 140,15" />
+          </svg>
+        </div>
+
         <span class="subtitle" data-i18n="countdown_subtitle">The Celebration Begins In</span>
         <div class="countdown-box">
           <div class="countdown-item">
@@ -151,8 +200,16 @@
 
   <!-- FOOTER -->
   <footer>
+    <div class="footer-divider-wrap">
+      <svg class="botanical-divider" viewBox="0 0 200 30" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M100,15 C95,10 90,15 100,25 C110,15 105,10 100,15 Z" fill="currentColor" fill-opacity="0.2" />
+        <path d="M90,17 C70,17 50,12 30,15" />
+        <path d="M110,17 C130,17 150,12 170,15" />
+      </svg>
+    </div>
     <div class="footer-names">Anvar & Laylo</div>
     <p class="footer-text">13 . 06 . 2026</p>
+    <p class="footer-closing" data-i18n="footer_closing">Muhabbat bilan, Anvar & Laylo</p>
   </footer>
 
   <!-- JavaScript Behavior File -->

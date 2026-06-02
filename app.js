@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_days: "Kun",
       countdown_hours: "Soat",
       countdown_minutes: "Daqiqa",
-      countdown_seconds: "Soniya"
+      countdown_seconds: "Soniya",
+      music_label: "Fon musiqasi",
+      footer_closing: "Muhabbat bilan, Anvar & Laylo"
     },
     ru: {
       title: "Свадебное Приглашение — Анвар и Лайло",
@@ -36,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_days: "Дней",
       countdown_hours: "Часов",
       countdown_minutes: "Минут",
-      countdown_seconds: "Секунд"
+      countdown_seconds: "Секунд",
+      music_label: "Фоновая музыка",
+      footer_closing: "С любовью, Анвар и Лайло"
     },
     en: {
       title: "Anvar & Laylo — Wedding Invitation",
@@ -51,7 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_days: "Days",
       countdown_hours: "Hours",
       countdown_minutes: "Minutes",
-      countdown_seconds: "Seconds"
+      countdown_seconds: "Seconds",
+      music_label: "Background Music",
+      footer_closing: "With love, Anvar & Laylo"
     }
   };
 
@@ -116,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (iconMuted) iconMuted.style.display = 'none';
       if (iconPlaying) iconPlaying.style.display = 'block';
       if (soundWave) soundWave.classList.add('playing');
+      if (musicToggle) musicToggle.classList.add('playing');
       isPlaying = true;
     }).catch(error => {
       console.log('Playback blocked. Awaiting interaction:', error);
@@ -128,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (iconPlaying) iconPlaying.style.display = 'none';
     if (iconMuted) iconMuted.style.display = 'block';
     if (soundWave) soundWave.classList.remove('playing');
+    if (musicToggle) musicToggle.classList.remove('playing');
     isPlaying = false;
   }
   
