@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const translations = {
     uz: {
-      title: "Anvar & Laylo — Taklifnoma",
+      title: "Farruxbek & Fotimai Zahro — Taklifnoma",
       hero_subtitle: "Nikoh To'yi",
       hero_quote: "«Sevgi — bu bir-biriga qarash emas, balki bir yo‘nalishda birga qarashdir.»",
       hero_author: "— Jaloliddin Rumiy",
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_minutes: "Daqiqa",
       countdown_seconds: "Soniya",
       music_label: "Fon musiqasi",
-      footer_closing: "Muhabbat bilan, Anvar & Laylo"
+      footer_closing: "Muhabbat bilan, Farruxbek & Fotimai Zahro"
     },
     ru: {
-      title: "Свадебное Приглашение — Анвар и Лайло",
+      title: "Свадебное Приглашение — Фаррухбек и Фотима Захро",
       hero_subtitle: "Свадебное Торжество",
       hero_quote: "«Любовь — это не смотреть друг на друга, а смотреть в одном направлении.»",
       hero_author: "— Джалаладдин Руми",
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_minutes: "Минут",
       countdown_seconds: "Секунд",
       music_label: "Фоновая музыка",
-      footer_closing: "С любовью, Анвар и Лайло"
+      footer_closing: "С любовью, Фаррухбек и Фотима Захро"
     },
     en: {
-      title: "Anvar & Laylo — Wedding Invitation",
+      title: "Farruxbek & Fotimai Zahro — Wedding Invitation",
       hero_subtitle: "Wedding Celebration",
       hero_quote: "\"Love does not consist in gazing at each other, but in looking together in the same direction.\"",
       hero_author: "— Jalaluddin Rumi",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       countdown_minutes: "Minutes",
       countdown_seconds: "Seconds",
       music_label: "Background Music",
-      footer_closing: "With love, Anvar & Laylo"
+      footer_closing: "With love, Farruxbek & Fotimai Zahro"
     }
   };
 
