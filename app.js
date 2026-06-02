@@ -246,4 +246,18 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('reveal-active'));
   }
 
+  // ==========================================================================
+  // 6. AUTO-START MUSIC ON SCROLL
+  // ==========================================================================
+  let hasScrolledStart = false;
+  const startAudioOnScroll = () => {
+    if (hasScrolledStart) return;
+    if (window.scrollY > 50) {
+      hasScrolledStart = true;
+      playAudio();
+      window.removeEventListener('scroll', startAudioOnScroll);
+    }
+  };
+  window.addEventListener('scroll', startAudioOnScroll);
+
 });

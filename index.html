@@ -30,10 +30,10 @@
     <button class="lang-btn" data-lang="en">EN</button>
   </div>
 
-  <!-- Sleek Floating Music Pill Widget -->
-  <div class="music-widget music-pill-container">
-    <button id="music-toggle" class="music-pill-btn" aria-label="Toggle Background Music">
-      <span class="music-pill-icon-wrap">
+  <!-- Floating Circular Music Widget -->
+  <div class="music-widget circular-music-container">
+    <button id="music-toggle" class="music-circle-btn" aria-label="Toggle Background Music">
+      <span class="music-icon-wrap">
         <!-- Muted Icon by default -->
         <svg id="music-icon-muted" viewBox="0 0 24 24" class="music-icon">
           <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM4 9v6h4l5 5V4L8 9H4zm12.5-6.03c-.22-.05-.44-.08-.66-.11v2.06c.11.02.22.05.32.08.38.1.75.25 1.1.44l1.48-1.48c-.68-.45-1.44-.78-2.24-.99zM19.97 6l-1.48 1.48c.51.57.92 1.23 1.2 1.95l1.89-.63C21.2 7.74 20.66 6.82 19.97 6zm.38 6.37l1.89.63c.2-.59.32-1.21.36-1.85h-1.92c-.03.41-.11.82-.33 1.22zm-2.9 3.12l1.48 1.48c.68-.57 1.23-1.28 1.61-2.08l-1.83-.61c-.26.54-.64 1.02-1.26 1.21z" fill="currentColor"/>
@@ -43,15 +43,14 @@
           <path d="M3 9v6h4l5 5V4L8 9H4zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" fill="currentColor"/>
         </svg>
       </span>
-      <span class="music-pill-text" data-i18n="music_label">Fon musiqasi</span>
-      <!-- Sound Wave Animation Visualizer -->
-      <div id="music-wave" class="music-wave">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </button>
+    <!-- Sound Wave Animation Visualizer -->
+    <div id="music-wave" class="music-wave mini-wave">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
   <!-- Main Scrollable Body -->
